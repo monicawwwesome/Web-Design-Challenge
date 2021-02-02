@@ -1,0 +1,22 @@
+/* Body */
+body {
+    width: 100%;
+    min-height:100%;
+    background-color: lightgray;
+}
+
+/* Navbar */
+.navbar{
+    position: absolute;
+    right: 30px;
+}
+
+.navbar a{
+  background-color:white;
+}
+
+
+/* Image */
+img {
+    max-width: 100%;
+}
