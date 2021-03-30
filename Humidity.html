@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand text-white" href="LandingPage.html" >Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,51 +51,47 @@
             </ul>
         </div>
     </div>
-</nav>
+  </nav>
 
-<body>
-<div class="container content">    
-    <div class="row">
-        <div class="col-md-8">
-            <div class="col-md-12">
-                <h3>Summary: Latitude vs. X </h3>
-                <hr>
-                <div class="thumbnail">
-                    <img class="img-thumbnail float-left" src="Resources/assets/images/Fig1.png " width="50%" alt="temperature">
-                </div>
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  </p> 
-                
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+
+  <div class="container">
+    <section class="row">
+      <div class="col-md-8">
+        <article class="description-content">
+          <h1 class="description-header">Humidity</h1>
+          <hr class="description-hr"/>
+          <img src="Resources/images/Fig2.png" alt="" class="img-responsive"/>
+          <p>With our current analysis, it is difficult to find any obvious correlation between latittude and humidity. There is a clear band of many data points at 100% humidity, and there do seem to be strong clusters of high humidity around the equator and in some other areas (e.g. a strong band of 0% humidity at latitude > 60). Further analysis is required.</p>
+        </article>
+      </div>
+      <div class="col-md-4">
+
+        <section id="imageNav-area">
+          <div class="imageNav-content">
+            <h2 class="imageNav-header">Visualizations</h2>
+            <hr />
+            <div id="images">
+              <a href="Temperature.html"><img src="Resources/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+              <a href="Humidity.html"><img src="Resources/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo active"></a>
+              <a href="Cloudiness.html"><img src="Resources/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+              <a href="WindSpeed.html"><img src="Resources/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
             </div>
-        </div>
+          </div>
+        </section>
 
-        <div class="col-md-4">
-            <div class="col-md-12">
-                <h3>Visualizations</h3>
-                <hr>
-                <div class="row">
-                    <div class="col-3 col-md-6">
-                        <a href="temp.html"><img src="Resources/assets/images/Fig1.png" width="100%"  alt="temperature">
-                        </a> 
-                    </div>
-                    <div class="col-3 col-md-6">
-                        <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
-                    </div>
-               
-                    <div class="col-3 col-md-6">
-                        <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
-                    </div>
-
-                    <div class="col-3 col-md-6">
-                        <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png"width="100%"  alt="wind speed"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+      </div>
+    </section>
+  </div>
 
 
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+  <!-- Bootstrap CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
-</html>>
+</html>
+
+
+</html>
